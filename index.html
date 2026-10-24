@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a0b">
+<title>Icebox_bebidas | Catálogo de bebidas</title>
+<style>
+:root{--bg:#080a0b;--panel:#121619;--panel2:#191f22;--gold:#f4b942;--text:#f6f6f2;--muted:#a9b0b2;--line:#2a3033;--green:#25d366}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}a{color:inherit}.top{padding:10px 5%;background:#101416;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px}.wrap{width:min(1180px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:18px}.brand{font-size:24px;font-weight:900;letter-spacing:.5px}.brand span{color:var(--gold)}.tag{font-size:11px;color:var(--muted);letter-spacing:2px;margin-top:4px}.search{background:var(--panel2);border:1px solid var(--line);border-radius:30px;padding:12px 16px;color:white;width:min(320px,100%)}.hero{background:linear-gradient(100deg,rgba(0,0,0,.9),rgba(0,0,0,.55)),radial-gradient(ellipse at 70% 40%,#57401a,#17120a 45%,#080a0b 75%);border:1px solid #302719;border-radius:22px;padding:clamp(28px,6vw,68px);min-height:290px;display:flex;align-items:center}.eyebrow{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.02;margin:14px 0;max-width:660px}.hero h1 span{color:var(--gold)}.hero p{color:#d0d2d0;max-width:480px;line-height:1.6}.btn{display:inline-block;border:0;border-radius:10px;padding:13px 19px;background:var(--gold);color:#17120a;font-weight:800;text-decoration:none;cursor:pointer}.section{padding:30px 0}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.section h2{margin:0;font-size:23px}.section h2:after{content:"";display:inline-block;width:38px;height:3px;background:var(--gold);margin:0 0 5px 12px}.categories{display:flex;flex-wrap:wrap;gap:10px}.chip{background:var(--panel);border:1px solid var(--line);padding:10px 15px;border-radius:30px;color:#e8e8e5;cursor:pointer}.chip.active,.chip:hover{border-color:var(--gold);color:var(--gold)}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{background:linear-gradient(160deg,#151a1d,#0d1011);border:1px solid var(--line);border-radius:15px;padding:15px;display:flex;flex-direction:column;min-width:0}.pic{height:125px;display:grid;place-items:center;background:radial-gradient(ellipse,#24282a,#111516 65%);border-radius:10px;font-size:58px;margin-bottom:13px}.card h3{font-size:15px;margin:0 0 7px}.desc{font-size:12px;color:var(--muted);line-height:1.4;min-height:30px}.price{color:var(--gold);font-size:19px;font-weight:800;margin:12px 0}.card button{margin-top:auto;width:100%;padding:11px 8px;border-radius:8px;background:var(--gold);border:0;font-weight:bold;cursor:pointer}.bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px 0 32px}.benefit{background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:12px;font-size:13px;color:var(--muted)}.benefit strong{display:block;color:white;margin-bottom:5px}.footer{border-top:1px solid var(--line);padding:22px 0 90px;color:var(--muted);font-size:12px;line-height:1.6}.cartbar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);width:min(540px,92%);background:#1a211e;border:1px solid #33513e;box-shadow:0 10px 40px #0009;border-radius:15px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:5}.cartbar small{display:block;color:#b7c5bc;margin-top:3px}.whatsapp{background:var(--green);color:#062b13;border:0;border-radius:9px;padding:12px 14px;font-weight:800;cursor:pointer;white-space:nowrap}.age{position:fixed;inset:0;background:#000e;display:grid;place-items:center;z-index:10;padding:20px}.agebox{max-width:420px;background:#121719;border:1px solid #4b3c1e;border-radius:18px;padding:28px;text-align:center}.agebox h2{margin-top:0}.agebox p{color:var(--muted);line-height:1.5}.agebox .btn{margin:6px}.secondary{background:transparent;color:#ddd;border:1px solid #454b4d}.hidden{display:none!important}
+@media(max-width:850px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.bottom{grid-template-columns:1fr}.search{max-width:190px}.hero{min-height:260px}}@media(max-width:480px){.top{font-size:11px}.nav{flex-wrap:wrap}.brand{font-size:21px}.search{order:3;width:100%;max-width:none}.hero{padding:25px 20px}.hero h1{font-size:36px}.products{gap:9px}.card{padding:10px}.pic{height:100px;font-size:48px}.card h3{font-size:13px}.price{font-size:17px}.cartbar{align-items:center}.whatsapp{font-size:12px;padding:11px}}
+</style>
+</head>
+<body>
+<div class="top"><span>❄️ Bebidas geladas para curtir bons momentos</span><span>Entrega em toda a Zona Sul · Consulte taxa e prazo</span></div>
+<header class="wrap nav">
+  <div><div class="brand">🧊 ICEBOX<span>_BEBIDAS</span></div><div class="tag">SUA BEBIDA, DO SEU JEITO</div></div>
+  <input id="search" class="search" type="search" placeholder="Buscar bebidas..." aria-label="Buscar bebidas">
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div><div class="eyebrow">Sua adega online</div><h1>BEBIDA GELADA.<br><span>ROLÊ GARANTIDO.</span></h1><p>Confira nosso catálogo, escolha suas bebidas e mande seu pedido direto pelo WhatsApp.</p><a class="btn" href="#catalogo">VER CATÁLOGO ↓</a></div>
+  </section>
+  <section class="section">
+    <div class="sectionhead"><h2>ESCOLHA SUA BEBIDA</h2></div>
+    <div class="categories" id="categories">
+      <button class="chip active" data-cat="Todas">Todas</button><button class="chip" data-cat="Cervejas">🍺 Cervejas</button><button class="chip" data-cat="Destilados">🥃 Destilados</button><button class="chip" data-cat="Vinhos">🍷 Vinhos</button><button class="chip" data-cat="Combos">🎁 Combos</button><button class="chip" data-cat="Outros">🧊 Outros</button>
+    </div>
+  </section>
+  <section class="section" id="catalogo">
+    <div class="sectionhead"><h2>DESTAQUES</h2><span id="count" style="color:var(--muted);font-size:13px"></span></div>
+    <div class="products" id="products"></div>
+  </section>
+  <section class="bottom">
+    <div class="benefit"><strong>🚚 Entrega na região</strong>Atendemos toda a Zona Sul. Consulte taxa e prazo pelo WhatsApp.</div>
+    <div class="benefit"><strong>💬 Pedido fácil</strong>Monte seu pedido no catálogo e envie direto para a nossa equipe.</div>
+    <div class="benefit"><strong>🧊 Bebidas para todos os momentos</strong>Confira disponibilidade e valores atualizados antes de confirmar.</div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap"><strong>ICEBOX_BEBIDAS</strong><br>Venda proibida para menores de 18 anos. Bebida alcoólica deve ser consumida com moderação.<br>Preços e disponibilidade ilustrativos neste modelo inicial. Confirme as informações antes de publicar.</div></footer>
+<div id="cartbar" class="cartbar hidden"><div><strong id="cartsummary">0 itens · R$ 0,00</strong><small>Seu pedido será enviado pelo WhatsApp</small></div><button class="whatsapp" id="checkout">Enviar pedido ↗</button></div>
+<div id="age" class="age"><div class="agebox"><div style="font-size:42px">🧊</div><h2>Você tem 18 anos ou mais?</h2><p>Este catálogo pode conter bebidas alcoólicas. Confirme sua idade para continuar.</p><button class="btn" id="yes">Sim, tenho 18+</button><button class="btn secondary" id="no">Não tenho 18</button><p style="font-size:11px">Venda de bebidas alcoólicas proibida para menores de 18 anos.</p></div></div>
+<script>
+/* CONFIGURAÇÃO: troque pelo WhatsApp da loja com código do país e DDD, somente números.
+   Exemplo: 5551999999999. Não deixe o número de exemplo ao publicar. */
+const WHATSAPP_NUMBER = "555195596963";
+const products = [
+ {id:1,name:"Cerveja lata 350 ml",desc:"Consulte marcas e disponibilidade",price:5.50,cat:"Cervejas",emoji:"🍺"},
+ {id:2,name:"Cerveja long neck",desc:"Unidade · marcas variadas",price:7.50,cat:"Cervejas",emoji:"🍻"},
+ {id:3,name:"Whisky 1 L",desc:"Consulte marcas disponíveis",price:129.90,cat:"Destilados",emoji:"🥃"},
+ {id:4,name:"Vodka 1 L",desc:"Consulte marcas disponíveis",price:69.90,cat:"Destilados",emoji:"🍸"},
+ {id:5,name:"Vinho tinto 750 ml",desc:"Consulte rótulos disponíveis",price:39.90,cat:"Vinhos",emoji:"🍷"},
+ {id:6,name:"Espumante 750 ml",desc:"Ideal para comemorações",price:49.90,cat:"Vinhos",emoji:"🥂"},
+ {id:7,name:"Combo para o rolê",desc:"Monte seu combo com a loja",price:59.90,cat:"Combos",emoji:"🎁"},
+ {id:8,name:"Gelo ensacado",desc:"Consulte tamanho e disponibilidade",price:8.00,cat:"Outros",emoji:"🧊"}
+];
+let category="Todas", cart={};
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function render(){
+ const q=document.querySelector("#search").value.toLowerCase();
+ const shown=products.filter(p=>(category==="Todas"||p.cat===category)&&(p.name+" "+p.desc+" "+p.cat).toLowerCase().includes(q));
+ document.querySelector("#count").textContent=shown.length+" produtos";
+ document.querySelector("#products").innerHTML=shown.map(p=>`<article class="card"><div class="pic">${p.emoji}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">${money(p.price)}</div><button onclick="add(${p.id})">＋ Adicionar</button></article>`).join("")||"<p>Nenhum produto encontrado.</p>";
+ updateCart();
+}
+function add(id){cart[id]=(cart[id]||0)+1;updateCart()}
+function updateCart(){let n=Object.values(cart).reduce((a,b)=>a+b,0),total=products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0);document.querySelector("#cartbar").classList.toggle("hidden",n===0);document.querySelector("#cartsummary").textContent=`${n} ${n===1?"item":"itens"} · ${money(total)}`}
+document.querySelector("#categories").addEventListener("click",e=>{let b=e.target.closest("button[data-cat]");if(!b)return;category=b.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));render()});
+document.querySelector("#search").addEventListener("input",render);
+document.querySelector("#checkout").addEventListener("click",()=>{
+ const lines=products.filter(p=>cart[p.id]).map(p=>`• ${cart[p.id]}x ${p.name} — ${money(p.price*cart[p.id])}`);
+ if(!lines.length)return;
+ const total=products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0);
+ const msg=`Olá, Icebox_bebidas! Quero fazer um pedido:\\n\\n${lines.join("\\n")}\\n\\nTotal estimado: ${money(total)}\\n\\nNome:\\nEndereço/bairro:\\nForma de pagamento:\\nEntrega: Zona Sul\nPode confirmar disponibilidade, taxa e prazo de entrega?`;
+ if(!/^55\\d{10,11}$/.test(WHATSAPP_NUMBER)){alert("Antes de receber pedidos, configure o número de WhatsApp da loja no arquivo index.html (WHATSAPP_NUMBER).");return}
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank");
+});
+document.querySelector("#yes").onclick=()=>document.querySelector("#age").classList.add("hidden");
+document.querySelector("#no").onclick=()=>{document.querySelector(".agebox").innerHTML="<h2>Acesso não permitido</h2><p>A venda e o consumo de bebidas alcoólicas são proibidos para menores de 18 anos.</p>"};
+render();
+</script>
+</body></html>
